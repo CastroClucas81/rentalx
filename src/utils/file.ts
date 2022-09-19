@@ -2,7 +2,7 @@ import fs from "fs";
 
 const deleteFile = async (filename: string): Promise<void> => {
   try {
-    // stat - verifica se um arquivo existe ou nao
+    // verifica se um arquivo existe ou nao (stat)
     await fs.promises.stat(filename);
   } catch (error) {
     return;
